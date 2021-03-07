@@ -2,6 +2,12 @@
 
 extracts frontmatter from text files with ease.
 
+## Fork
+
+This fork has some slight modifications to fit my purposes.
+
+Instead of returning an error when a markdown file doesn't contain a frontmatter, it now returns the content of the file in the body.
+
 ## Features
 * Custom delimiters. You are free to register any delimiter of your choice. Provided its a three character string. e.g `+++`,  `$$$`,  `---`,  `%%%`
 * Custom Handlers. Anything that implements `HandlerFunc` can be used to decode the values from the frontmatter text, you can see the `JSONHandler` for how to implement one.
